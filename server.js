@@ -13,9 +13,9 @@ var port = 9000;
 var server = new PeerServer({port: port});
 logger.info("server start, listening on port " + port.toString());
 server.on('connection', function(id) {
-    logger.info(id + 'connected');
+    logger.info(id + ' connected');
 });
 
 server.on('disconnect', function(id) {
-    logger.info(id + 'disconnected');
+    logger.info(id + ' disconnected');
 })
